@@ -22,31 +22,62 @@ function doesFileExist(url) {
 
 window.addEventListener('load', function() {
     if (doesFileExist(testImgSrc)) {
-        testImg = this.document.createElement('img')
+        testImg = this.document.createElement('img');
         testImg.src = testImgSrc;
+        var testOpacity = this.document.createElement('p');
+
 
         this.document.querySelector('body').appendChild(testImg);
+        this.document.querySelector('body').appendChild(testOpacity);
         this.document.querySelector('body').style.position = 'relative';
 
+        
         testImg.style.cssText = `
             position: absolute;
             left : 50%;
             top : 0;
             transform : translateX(-50%);
             opacity : 0.5;
-            display : none;
+            display : block;
         `;
 
-        this.document.addEventListener('keypress', function(event) {
-            var key = event.key;
+        testOpacity.style.cssText = `
+            position : absolute;
+            top : 20px;
+            right : 100px;
+            color : red;
+            font-size : 20px;
+            font-weight : bold;
+        `
 
-            if (key === 't') {
+        let txt = this.document.createTextNode("0.5") 
+        testOpacity.appendChild(txt)
+
+        this.document.addEventListener('keydown', function(event) {
+            var key = event.key;
+            let currentOpacity = parseFloat(testImg.style.opacity) || 0; 
+            let newOpacity;
+
+            if (key === 't' || key === 'T' || key === 'ㅅ') {
                 if (testImg.style.display === 'none') {
                     testImg.style.display = 'block';
                 } else {
                     testImg.style.display = 'none';
                 }
             }
+
+            if (key === ',' && testImg.style.display === 'block') {
+                newOpacity = Math.min(currentOpacity + 0.1, 1); 
+                testImg.style.opacity = newOpacity;
+                testOpacity.innerText = newOpacity;
+            } 
+
+            if (key === '.' && testImg.style.display === 'block') {
+                newOpacity = Math.min(currentOpacity - 0.1, 1); 
+                testImg.style.opacity = newOpacity;
+                testOpacity.innerText = newOpacity;
+            }
+
         })
     }
 });
