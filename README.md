@@ -17,7 +17,9 @@
   <a href="#license">License</a>
 </p>
 
-![screenshot](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDRjMmVpMWVyNXk1a3B0Zm5ydjMxM3c1bzRwb2E0YTk2dzBqZGl4MyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ulF1vtiDbvrrvKcP3N/giphy.gif)
+<div align="center">
+  ![screenshot](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDRjMmVpMWVyNXk1a3B0Zm5ydjMxM3c1bzRwb2E0YTk2dzBqZGl4MyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ulF1vtiDbvrrvKcP3N/giphy.gif)  
+</div>
 
 ## Key Features
 
