@@ -17,7 +17,7 @@
   <a href="#license">License</a>
 </p>
 
-![screenshot](https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif)
+![screenshot](https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExOWI1dTI1bGVsNGZndDQyeDAzN3JkZzdpMmpucnQzZ2pwbDl0ZXFwayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/tY44NdAPbdJSRzHWPy/giphy.gif)
 
 ## Key Features
 
@@ -25,9 +25,6 @@
 * 현재 창 너비 표시
 * 투명도 실시간 조절
 * 단축키 기반 간편 토글  
-  - `T` (또는 한글 `ㅅ`) → 오버레이 ON/OFF  
-  - `,` → 투명도 낮추기 (-0.1)  
-  - `.` → 투명도 높이기 (+0.1)
 
 ---
 
@@ -65,5 +62,5 @@ overlay-test.js를 프로젝트 root에 저장
 
 # Step 4: 단축키 제어
 T (또는 ㅅ) → 오버레이 토글
-, → 투명도 낮추기
+, → 투명도 낮추기 
 . → 투명도 높이기
